@@ -78,14 +78,9 @@ static void InstallTitle(const char *titlePath)
         u32 titleIdHigh = mcpInstallInfo[0];
         u32 titleIdLow = mcpInstallInfo[1];
 
-        if(   (titleIdHigh == 0x0005000E)     // game update
-           || (titleIdLow == 0x10041000)     // JAP title
-           || (titleIdLow == 0x10041100)     // USA title
-           || (titleIdLow == 0x10041200))    // EUR title
-        {
             installedTitle = ((u64)titleIdHigh << 32ULL) | titleIdLow;
 
-            if(installToUsb && (titleIdHigh == 0x0005000E))
+            if(installToUsb)
             {
                 result = MCP_InstallSetTargetDevice(mcpHandle, 1);
                 if(result != 0)
@@ -180,13 +175,6 @@ static void InstallTitle(const char *titlePath)
                 }
                 installSuccess = 1;
             }
-        }
-        else
-        {
-            __os_snprintf(text, sizeof(text), "Error: Not a version title or a game update");
-            PrintError(text);
-        }
-
     }
     while(0);
 
