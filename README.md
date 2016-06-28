@@ -41,10 +41,9 @@ On YOUR Wii U :
 
 Credits :
 
-[USER=37280]@crediar[/USER] for the original WUPInstaller and the modified NUSGrabber
-[USER=152747]@dimok[/USER] for the HBL version of WUPInstaller
-[USER=374896]@NexoCube[/USER] for testing and modfiying this (yeah i'm talking about me)
-Moderators for not deleting this post
+crediar for the original WUPInstaller and the modified NUSGrabber
+dimok for the HBL version of WUPInstaller
+NexoCube for testing and modfiying this (yeah i'm talking about me)
 
 
 For additional information, visit this website. (Chrome users, it might prints out that this website maybe dangerous but click Details -> "Visit this website cuz' i'm a thug bb")
